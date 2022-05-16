@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Bold.ttf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="SFUIDisplay-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PostTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Text Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF5-bY-voM">
+                        <rect key="frame" x="28" y="89" width="269" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-Fu-r5s">
+                        <rect key="frame" x="28" y="25" width="29" height="15"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" name="textGreyColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXQ-M1-FxD">
+                        <rect key="frame" x="28" y="119.5" width="84" height="39.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <color key="tintColor" name="textGreyColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Подробнее..."/>
+                        <state key="selected" title="Скрыть">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="highlighted" title="Скрыть"/>
+                        <connections>
+                            <action selector="showTextAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="r4Z-aN-gLs"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLg-Ho-pIR">
+                        <rect key="frame" x="28" y="54" width="269" height="24"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kLg-Ho-pIR" secondAttribute="trailing" constant="28" id="F0k-AP-7zE"/>
+                    <constraint firstItem="a2b-Fu-r5s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="FMr-rC-8zx"/>
+                    <constraint firstItem="jXQ-M1-FxD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="FNy-6j-N2J"/>
+                    <constraint firstItem="kLg-Ho-pIR" firstAttribute="top" secondItem="a2b-Fu-r5s" secondAttribute="bottom" constant="14" id="Oia-mq-hDn"/>
+                    <constraint firstItem="jXQ-M1-FxD" firstAttribute="top" secondItem="FF5-bY-voM" secondAttribute="bottom" constant="14" id="QHE-BP-HfA"/>
+                    <constraint firstAttribute="trailing" secondItem="FF5-bY-voM" secondAttribute="trailing" constant="28" id="ecz-Wd-vWq"/>
+                    <constraint firstItem="FF5-bY-voM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="la7-DF-Fus"/>
+                    <constraint firstAttribute="bottom" secondItem="jXQ-M1-FxD" secondAttribute="bottom" constant="29" id="llA-XQ-vWX"/>
+                    <constraint firstItem="a2b-Fu-r5s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="ps7-h0-MGR"/>
+                    <constraint firstItem="kLg-Ho-pIR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="udE-lp-URc"/>
+                    <constraint firstItem="FF5-bY-voM" firstAttribute="top" secondItem="kLg-Ho-pIR" secondAttribute="bottom" constant="11" id="udu-Rt-Odn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="previewTextLabel" destination="FF5-bY-voM" id="ONg-Rl-SBE"/>
+                <outlet property="showTextButton" destination="jXQ-M1-FxD" id="id0-5P-e7U"/>
+                <outlet property="timeShampLabel" destination="a2b-Fu-r5s" id="OTV-De-8za"/>
+                <outlet property="titleLabel" destination="kLg-Ho-pIR" id="w9u-Qu-iQs"/>
+            </connections>
+            <point key="canvasLocation" x="135.50724637681159" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="textGreyColor">
+            <color red="0.45490196347236633" green="0.45490196347236633" blue="0.45490196347236633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
